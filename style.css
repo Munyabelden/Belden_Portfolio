@@ -477,6 +477,11 @@ a {
   background-repeat: no-repeat;
 }
 
+.projects h2,
+.projects p {
+  align-self: flex-start;
+}
+
 .project-columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));

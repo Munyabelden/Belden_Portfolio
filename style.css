@@ -15,22 +15,18 @@
   --family-tetiary: 'Poppins', sans-serif;
   --family-secondary: 'Just Another Hand', sans-serif;
   --family-accent: 'IBM Plex Sans', sans-serif;
-
   --primary-background: #ecf7ff;
   --secondary-background: linear-gradient(to right, #d0e0ec, #e8eef1);
   --tetiary-background: rgba(88, 118, 139, 0.9);
-
   --clr-primary: #000612;
   --clr-secondary: #16282f;
   --clr-accent: #347d98;
   --clr-light: #ced6db;
-
   --s: 84px;
   --c1: #f2f2f2;
   --c2: #cdcbcc;
-  --c3: #999999;
-  
-  --_g: 0 120deg,#0000 0;
+  --c3: #999;
+  --_g: 0 120deg, #0000 0;
 }
 
 .font-family-poppins {
@@ -148,8 +144,8 @@ a {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background:  var(--tetiary-background);
-    backdrop-filter: blup(5px);
+    background: var(--tetiary-background);
+    backdrop-filter: blur(5px);
     transform: translateX(100%);
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
@@ -244,10 +240,6 @@ a {
   gap: 10px;
   margin-top: 15px;
   margin-left: -30px;
-}
-
-.social-media li a img {
-  width: 20px;
 }
 
 @media (min-width: 768px) {
@@ -370,7 +362,7 @@ a {
 }
 
 .resume-button {
-  background: #ffffff;
+  background: #fff;
   color: var(--clr-secondary);
   border: 1px solid var(--clr-secondary);
   padding: 5px 10px;
@@ -399,6 +391,7 @@ a {
 }
 
 /*  skills */
+
 .features {
   display: flex;
   flex-direction: row;
@@ -448,10 +441,15 @@ a {
   background-size: cover;
   background-position: center;
   width: 100%;
+
   /* box-shadow: 5px 5px 0 2px #22434e;
   margin-bottom: 15px;
   border-bottom: 2px solid #5d8297;
   border-right: 3px solid #fff; */
+}
+
+.social-media li a img {
+  width: 20px;
 }
 
 .column-1 {
@@ -532,7 +530,7 @@ a {
     -moz-transition: all 200ms ease-in-out;
     -ms-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;
-}
+  }
 
   .project-links:hover {
     opacity: 1;
@@ -612,12 +610,13 @@ a {
 }
 
 @media (min-width: 768px) {
-  .footer section{
+  .footer section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
   }
+
   .footer-p {
     width: 500px;
   }

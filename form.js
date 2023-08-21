@@ -1,5 +1,6 @@
 "use strict";
-const form = document.querySelector('.mobile-form');
+
+const form = document.querySelector('.form');
 
 const formSubmit = (input) => {
     if (input === input.toLowerCase()) return true;
@@ -13,7 +14,7 @@ form.addEventListener('submit', (event) => {
       const errorMessage = document.querySelector('.error-message');
       const email = document.querySelector('#email');
       errorMessage.classList.add('error');
-      email.classList.add('error');
+      email.classList.add('email-error');
     }
   });
 

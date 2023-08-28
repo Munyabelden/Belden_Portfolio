@@ -528,7 +528,7 @@ a {
   height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   width: 100%;
 
   /* box-shadow: 5px 5px 0 2px #22434e;
@@ -538,11 +538,11 @@ a {
 }
 
 .column-1 {
-  background-image: url('images/bookstore.png');
+  background-image: url('images/bookstore copy.png');
 }
 
 .column-2 {
-  background-image: url('images/calc.png');
+  background-image: url('images/calc copy.png');
 }
 
 .column-3 {

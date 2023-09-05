@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpg" href="images/logo.jpg" sizes="32x32">
         <script src="https://kit.fontawesome.com/c373984c3f.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,22 +21,24 @@
     <body>
         <header id="home" class="header">
             <div class="toolbar">
-                <a href="#home" class="toolbar-logo font-family-hand">Belden Mugauri</a>
+                <a href="#home" class="toolbar-logo font-family-hand">Belden <span>Mugauri</span></a>
                 <button id="menu-btn" class=" menu-btn" aria-controls="nav-bar"
                 ><i class="fa-solid fa-bars "><span class="sr-only">Menu</span></i></button>
                 <nav class="nav-bar" id="nav-bar" data-visible="false">
                     <button class="menu-exit" id="exit-btn" aria-controls="nav-bar" type="button"><i class="fa-solid fa-xmark"></i><span class="sr-only">Exit</span></button>
                     <ul class="nav-items ">
                         <li> <a  class="nav-item active" href="#home">Portfolio</a></li>
+                        <li> <a  class="nav-item" href="#projects">Projects</a></li>
                         <li> <a  class="nav-item" href="#about">About</a></li>
-                        <li> <a class="nav-item" href="#contact">Contacts</a></li>
+                        <li> <a  class="nav-item" href="#skills">Skills</a></li>
+                        <li> <a class="nav-item" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div> 
             <section class="primary-content">
                 <img class="developer" src="images/developer.svg" alt="illustration">
                 <div class="primary-information">
-                    <h1 class="primary-title font-family-poppins">I'm <span>Belden,</span><br> Glad to see you!</h1>
+                    <h1 class="primary-title font-family-poppins">Hey, I'm <span>Belden,</span><br> Glad to see you!</h1>
                     <p class="description font-family-poppins">
                         I'm a dedicated software developer experienced in bringing ideas to life. Check out my portfolio to see my work. If you have a project ready to be coded, I'm here to help. Message me anytime!.
                     </p>
@@ -68,12 +71,170 @@
                         </li>
                     </ul>
                 </div>
-            </section>  
+            </section>
+            <button id="backToTopBtn" class="backtotop">
+                <i class="fa-solid fa-angle-up"></i>
+            </button>
         </header>
        <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <section class="projects font-family-poppins" id="projects" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+            <h2>Projects</h2>
+            <p>Take a look at some of the projects I've built...</p>
+            <div class="project-columns">
+                <div class="column-item fade-in-up">
+                  <div class="column-item-images column-1">
+                      <!-- <div class="project-links">
+                          <a href="https://github.com/Munyabelden/Book-Store" target="_blank" rel="noopener noreferrer">
+                              <img src="images/github_3291667.png" alt="">
+                          </a>
+                          <a href="https://book-store-ifb3.onrender.com" target="_blank" rel="noopener noreferrer">
+                              <img src="images/out_5373225.png" alt="">
+                          </a>
+                      </div> -->
+                  </div>
+                    <div class="column-detail">
+                     <div>
+                        <h3 class="col-title">Book Store</h3>
+                     </div>
+                      <p>
+                          Immerse yourself in an enchanting React application meticulously tailored for avid book enthusiasts. This elegantly designed app seamlessly integrates with a server API, ensuring robust data storage as you effortlessly add, save, and remove books. Explore
+                      </p>
+                      <ul class="languages">
+                          <li>React</li>
+                          <li>CSS</li>
+                          <li>Redux</li>
+                      </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Munyabelden/Book-Store" target="_blank" rel="noopener noreferrer">
+                            source <img src="images/github_3291667.png" alt="">
+                        </a>
+                        <a href="https://book-app-snowy.vercel.app/" target="_blank" rel="prefetch">
+                            live <img src="images/out_5373225.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="column-item fade-in-up">
+                  <div class="column-item-images column-2">
+                  </div>
+                    <div class="column-detail">
+                      <h3 class="col-title">Math Calculator</h3>
+                      <p>
+                          Introducing an innovative calculator application designed to effortlessly handle basic mathematical computations while also delivering daily doses of inspiration. This app seamlessly guides you through arithmetic tasks while enlightening your day with uplifting quotes.
+                      </p>
+                      <ul class="languages">
+                          <li>React</li>
+                          <li>JavaScript</li>
+                          <li>CSS</li>
+                      </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Munyabelden/calculator" target="_blank" rel="noopener noreferrer">
+                            source <img src="images/github_3291667.png" alt="">
+                        </a>
+                        <a href="https://calculator-three-tawny.vercel.app/" target="_blank" rel="prefetch">
+                            live <img src="images/out_5373225.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="column-item fade-in-up">
+                  <div class="column-item-images column-3">
+                  </div>
+                    <div class="column-detail fade-in-up">
+                      <h3 class="col-title">BudgetPro</h3>
+                      <p>
+                           A dynamic web application designed to revolutionize the way you handle your expenses through efficient transaction categorization. Our platform empowers users to take control of their finances by providing a seamless experience for managing transactions.
+                      </p>
+                      <ul class="languages">
+                          <li>Ruby on Rails</li>
+                          <li>Ruby</li>
+                          <li>Bootstrap</li>
+                      </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Munyabelden/Budget-App" target="_blank" rel="noopener noreferrer">
+                            source <img src="images/github_3291667.png" alt="">
+                        </a>
+                        <a href="https://budgetpro.onrender.com" target="_blank" rel="prefetch">
+                            live <img src="images/out_5373225.png" alt="">
+                        </a>
+                    </div>
+                  </div>
+                <div class="column-item fade-in-up">
+                  <div class="column-item-images column-4">
+                   </div>
+                    <div class="column-detail fade-in-up">
+                      <h3 class="col-title">Room Home page</h3>
+                      <p>
+                          A responsive practice website that offers a tantalizing glimpse into the realm of exceptional home furnishings. Here, design, comfort, and innovation converge to create an immersive online experience like no other. Discover
+                      </p>
+                      <ul class="languages">
+                          <li>JavaScript</li>
+                          <li>HTML</li>
+                          <li>Bootstrap</li>
+                      </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Munyabelden/Room_homepage" target="_blank" rel="noopener noreferrer">
+                            source <img src="images/github_3291667.png" alt="">
+                        </a>
+                        <a href="https://munyabelden.github.io/Room_homepage/" target="_blank" rel="prefetch">
+                            live <img src="images/out_5373225.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="column-item fade-in-up">
+                    <div class="column-item-images column-5">
+                     </div>
+                      <div class="column-detail fade-in-up">
+                        <h3 class="col-title">Age Calculator</h3>
+                        <p>
+                            The application adeptly computes your age down to the finest granularity, delineating the expanse of years, months, and days that encompass your existence. All this prowess is orchestrated seamlessly through the utilization of JavaScript programming.
+                        </p>
+                        <ul class="languages">
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                      </div>
+                      <div class="project-links">
+                          <a href="https://github.com/Munyabelden/Age-Calculator" target="_blank" rel="noopener noreferrer">
+                              source <img src="images/github_3291667.png" alt="">
+                          </a>
+                          <a href="https://munyabelden.github.io/Age-Calculator/" target="_blank" rel="prefetch">
+                              live <img src="images/out_5373225.png" alt="">
+                          </a>
+                      </div>
+                  </div>
+                <div class="column-item fade-in-up">
+                    <div class="column-item-images column-6">
+                     </div>
+                      <div class="column-detail fade-in-up">
+                        <h3 class="col-title">Space Hub</h3>
+                        <p>
+                            Operating on the bedrock of React, the application elegantly orchestrates this interaction, offering a user-centric interface that beckons users to reserve rockets for their grand voyages and partake in the unfolding chronicles of intergalactic missions.
+                        </p>
+                        <ul class="languages">
+                            <li>React</li>
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Munyabelden/Kanban-2" target="_blank" rel="noopener noreferrer">
+                            source <img src="images/github_3291667.png" alt="">
+                        </a>
+                        <a href="https://kanban-2-tau.vercel.app/" target="_blank" rel="prefetch">
+                            live <img src="images/out_5373225.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Munyabelden?tab=repositories" class="projects-btn" target="_blank" rel="noopener noreferrer">See more projects &rarr;</a>
+        </section>
         <section class="what-i-do">
             <div class="section-1">
-              <div>
+              <div class="fade-in-up">
                 <h2>Design</h2>
                 <p>
                   I might not fit the mold of the traditional designer confined to an Illustrator artboard, meticulously adjusting pixels. Nevertheless, I live and breathe design. My world revolves around stylesheets, where I fine-tune font sizes and meticulously ponder over layouts. My dedication lies in crafting seamless user experiences, all while embracing the latest trends in style and aesthetics.
@@ -82,7 +243,7 @@
               <img src="images/Design tools-rafiki.svg" alt="">
             </div>
             <div class="section-2">
-                <div>
+                <div class="fade-in-up">
                     <h2>Development</h2>
                     <p>When it comes to constructing JavaScript, React, and Ruby applications, I come prepared with precisely the right set of tools. I possess the ability to operate seamlessly even without them, ensuring the creation of swift and robust solutions that are primed for scalability. Placing a high premium on performance and scalability, I prioritize these aspects meticulously in my work.</p>
                 </div>
@@ -126,135 +287,63 @@
                     </a>
                 </li>
             </ul>
-            <button class="resume-button">Get my resume</button>
+            <a href="https://docs.google.com/document/d/15FGfcEs-KurTJ_7bQ5ZJaw6-h0sC31SXqMRTNxfTZcE/edit?usp=sharing" target="_blank" class="resume-button">Get my resume</a>
         </div>
-        <img class="about-me-img" src="images/Video game developer-bro.svg" alt="">
+        <img class="about-me-img fade-in-up" src="images/Video game developer-bro.svg" alt="">
         </section>
-        <section class="skill-tools">
-            <ul class="features">
+        <section class="skills" id="skills">
+            <h2>Languages and Tools</h2>
+            <p>Here are some of my skills...</p>
+            <ul class="feature">
                 <li>
                     <img src="images/html-5_5968267.png" alt="JavaScript Logo">
+                    <span>HTML5</span>
                 </li>
                 <li>
                     <img src="images/css-3_5968242.png" alt="CSS Logo">
+                    <span>CSS3</span>
                 </li>
                 <li>
                     <img src="images/js_5968292.png" alt="HTML Logo">
+                    <span>JavaScript</span>
                 </li>
                 <li>
                     <img src="images/ruby.jpg" alt="Ruby Logo">
-                </li>              
+                    <span>Ruby</span>
+                </li> 
+            <li>
+                <img src="images/rails.png" alt="">
+                <span>Ruby on Rails</span>
+            </li>
+            <li>
+                <img src="images/react.png" alt="">
+                <span>React</span>
+            </li>
+            <li>
+                <img src="images/sass.png" alt="">
+                <span>sass</span>
+            </li>
+            <li>
+                <img src="images/bootstrap.png" alt="">
+                <span>Bootstrap</span>
+            </li>
                 <li>
-                    <img src="images/rails.png" alt="">
+                    <img src="images/database_1104982.png" alt="">
+                    <span>SQL</span>
                 </li>
                 <li>
-                    <img src="images/react.png" alt="">
+                    <img src="images/postgres.png" alt="">
+                    <span>PostgreSQL</span>
                 </li>
                 <li>
-                    <img src="images/sass.png" alt="">
+                    <img src="images/git-colors.png" alt="">
+                    <span>Git</span>
                 </li>
                 <li>
-                    <img src="images/bootstrap.png" alt="">
+                    <img src="images/gitlab.png" alt="">
+                    <span>GitLab</span>
                 </li>
             </ul>
-    </section>
-        <section class="project-columns font-family-poppins" >
-          <div class="column-item">
-            <div class="column-item-images column-1">
-                <div class="project-links">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <img src="images/github_3291667.png" alt="">
-                    </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <img src="images/out_5373225.png" alt="">
-                    </a>
-                </div>
-            </div>
-              <div class="column-detail">
-                <h3 class="col-title">Book Store</h3>
-                <p>
-                    Immerse yourself in an enchanting React application meticulously tailored for avid book enthusiasts. This elegantly designed app seamlessly integrates with a server API, ensuring robust data storage as you effortlessly add, save, and remove books.
-                </p>
-                <ul class="languages">
-                    <li>React</li>
-                    <li>CSS</li>
-                    <li>Redux</li>
-                </ul>
-              </div>
-          </div>
-          <div class="column-item">
-            <div class="column-item-images column-2">
-                <div class="project-links">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <img src="images/github_3291667.png" alt="">
-                    </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <img src="images/out_5373225.png" alt="">
-                    </a>
-                </div>
-            </div>
-              <div class="column-detail">
-                <h3 class="col-title">Math Calculator</h3>
-                <p>
-                    Introducing an innovative calculator application designed to effortlessly handle basic mathematical computations while also delivering daily doses of inspiration. This app seamlessly guides you through arithmetic tasks while enlightening your day with uplifting quotes.
-                </p>
-                <ul class="languages">
-                    <li>React</li>
-                    <li>CSS</li>
-                </ul>
-              </div>
-          </div>
-          <div class="column-item">
-            <div class="column-item-images column-3">
-                <div class="project-links">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <img src="images/github_3291667.png" alt="">
-                    </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <img src="images/out_5373225.png" alt="">
-                    </a>
-                </div>
-            </div>
-              <div class="column-detail">
-                <h3 class="col-title">BudgetPro</h3>
-                <p>
-                     A dynamic web application designed to revolutionize the way you handle your expenses through efficient transaction categorization. Our platform empowers users to take control of their finances by providing a seamless experience for managing transactions.
-                </p>
-                <ul class="languages">
-                    <li>Ruby on Rails</li>
-                    <li>Ruby</li>
-                    <li>Bootstrap</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="column-item">
-            <div class="column-item-images column-4">
-                <div class="project-links">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <img src="images/github_3291667.png" alt="">
-                    </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <img src="images/out_5373225.png" alt="">
-                    </a>
-                </div>
-             </div>
-              <div class="column-detail">
-                <h3 class="col-title">Room Home page</h3>
-                <p>
-                    A responsive practice website that offers a tantalizing glimpse into the realm of exceptional home furnishings. Here, design, comfort, and innovation converge to create an immersive online experience like no other.
-                </p>
-                <ul class="languages">
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Bootstrap</li>
-                </ul>
-              </div>
-          </div>
-    </section>
-    <section class="card">
-        <div class="card-item"></div>
     </section>
     </main>
     <footer id="contact" class="footer" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
@@ -276,9 +365,9 @@
             </div>  
             <label for="message" class="">Your Message</label>
             <textarea name="message" id="message" cols="10" rows="0" maxlength="500" placeholder="Hi, I've got a project needing your creative touch. Curious about your availability and how you work." required></textarea>
-            <!-- <div class="error-message" id="error">
-                <p ><span>Form not submitted<i class="fa-solid fa-circle-exclamation"></i></span> <br> Your email needs to be lower case(small letters)</p>
-            </div> -->
+            <div class="error-message" id="error">
+                <p ><span>Form not submitted <i class="fa-solid fa-circle-exclamation"></i></span> <br> Your email needs to be lower case(small letters)</p>
+            </div>
             <button type="submit" class="form-button">Get in touch</button>
         </form>
         </section>
